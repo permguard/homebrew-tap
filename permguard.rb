@@ -11,7 +11,7 @@ class Permguard < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_permguard_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "54cba7a2df4352cb69c30e5abe9cf1229be340b78c49459eeb3951b337944d57"
+      sha256 "66db14f0b8c5a8be2ab6199e68034f6d872ff96ed1ac38e8a7f9f177c8a6554e"
 
       def install
         bin.install "permguard"
@@ -19,7 +19,7 @@ class Permguard < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_permguard_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "7f4aadf380a2bd1bbf8d0b707a8e8ffbe2467555b953c0ce3c53198f2d5ec5b8"
+      sha256 "5cc349c9ffb8acec3c0ab3d6f97589bc97af692bdf1708768d814897ceb0648f"
 
       def install
         bin.install "permguard"
@@ -30,14 +30,14 @@ class Permguard < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_permguard_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "9940118859138e5409ca9be0f2229c9f33bc5863c7acc9b60b38545ea92b36b4"
+      sha256 "af1d817ac47495c87d5d8a0ee8b9fcb0498e47a31e73f9674ab0fa678b523d8f"
       def install
         bin.install "permguard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_permguard_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "96069de15816ee611ee4c68d242086057f24ed2f97e71fde3c0058d62da94247"
+      sha256 "47f5000694df29271996a1568c352b6ed4d91097a9740415e5b26637b465d160"
       def install
         bin.install "permguard"
       end
