@@ -10,16 +10,16 @@ class Cli < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_permguard_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "0af6a398e481d2385bcf2c5f12043797e69553440e16319189ac30b39daf4cd7"
+      url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_cli_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "d93d51c37a2f8ef00b53f3fb8b670c870ead969521b82f12a59c9362dc017539"
 
       def install
         bin.install "permguard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_permguard_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "a8b13722d09298c3af87f0abaeffc2107c50bef58380c74d2af4771870cb8be7"
+      url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_cli_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "6ace6d41e10279f31603ba47cab3413623e71775d015c2a96d964dd0fbae754b"
 
       def install
         bin.install "permguard"
@@ -29,15 +29,15 @@ class Cli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_permguard_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "38f090ba4cc283daaf338aa56a85da3fb3685cb3fc6efcf65ce61f6a881456ca"
+      url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_cli_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "0af83a6347567cf21ff383f6fb4c4c1647d12832c406fb0a8c3b8a150718d72c"
       def install
         bin.install "permguard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_permguard_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "c2a2e4915a8ac3afb175059608735b56416de3dc9989a4656234a365729531b8"
+      url "https://github.com/permguard/permguard/releases/download/v0.0.10/permguard_cli_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "20aba01550adbf46b6266ab9a18cc64360dcef8655ffb360395fa1e65697e48e"
       def install
         bin.install "permguard"
       end
