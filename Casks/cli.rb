@@ -3,7 +3,7 @@ cask "cli" do
   name "cli"
   desc "Permguard CLI"
   homepage "https://community.permguard.com/"
-  version "0.0.26"
+  version "0.0.27"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "cli" do
     on_intel do
       url "https://github.com/permguard/permguard/releases/download/v#{version}/permguard_cli_Darwin_x86_64.tar.gz",
         verified: "github.com/permguard/permguard/"
-      sha256 "829cb00f9974683aef4ad166554d0edf76f98087ab03778777783e2e3cae176a"
+      sha256 "e39599f4bd23eafd21da3f3f95b939f3d92d8a0a20ab4e792c6bc811891294fd"
     end
     on_arm do
       url "https://github.com/permguard/permguard/releases/download/v#{version}/permguard_cli_Darwin_arm64.tar.gz",
         verified: "github.com/permguard/permguard/"
-      sha256 "ce0cfad1baab3008eea5af363827c5f178b983c7d5803e481b8a4199682d052d"
+      sha256 "93a980b2c1def63373a4a1fbae9374b596d214ecb0eeefba9d942bbf436b3e1e"
     end
   end
 
@@ -28,12 +28,12 @@ cask "cli" do
     on_intel do
       url "https://github.com/permguard/permguard/releases/download/v#{version}/permguard_cli_Linux_x86_64.tar.gz",
         verified: "github.com/permguard/permguard/"
-      sha256 "b0f35b725ffb6dd602df345bd23daf26e4b8b0666aa986da19bda9f19b14d97a"
+      sha256 "814498625f5f209c09cd0549e2a871a9739efc358cce54fb3ca6b2681e75b3e8"
     end
     on_arm do
       url "https://github.com/permguard/permguard/releases/download/v#{version}/permguard_cli_Linux_arm64.tar.gz",
         verified: "github.com/permguard/permguard/"
-      sha256 "5900ac775aaa838c055c861c5fb7bf4dab62053cc898c8f1ba05b522b477d59c"
+      sha256 "593eefa736dd7b83e44e58de4841d8d37c44f3f97d18d17e277b4823846370e3"
     end
   end
 
