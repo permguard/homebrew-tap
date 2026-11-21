@@ -4,11 +4,11 @@ cask "permguard-cli@0" do
 
   on_macos do
     on_arm do
-      sha256 "51b8dd15d09f8307c9bda6747ff9edc12fb3bb824e932b68ccf1bbd9770e8c23"
+      sha256 "cc87203ff1ba802b61a17f99e9d3da33d247705f97d3f5492cf84518746f010f"
       url "https://github.com/permguard/permguard/releases/download/v#{version}/permguard_cli_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "40efea037cc3bf0af4b02eb14d3e079888a78d70a1b503774c5074cb4ea79bd0"
+      sha256 "c639a4e826070cb5cc11cfb2390c4d85523c1b2feca873db1397e8e58d8b3078"
       url "https://github.com/permguard/permguard/releases/download/v#{version}/permguard_cli_Darwin_x86_64.tar.gz"
     end
   end
